@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Four_events.css">
+    <style type="text/css">
+        * {
+            font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        h1{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            position: fixed;
+            margin-top: 0%;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.5);
+            width:100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: rgb(255, 91, 15);
+            width: 100%;
+            height: 500px;
+            background-position: center;
+            background-size: cover;
+            background-image: url('robotics.jpg') ;
+            background-attachment: fixed;
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+        }
+
+        span {
+            align-items: center;
+            background-color: rgb(225, 236, 63);
+            text-align: center;
+            color: rgb(255, 25, 25);
+            font-size: 60px;
+            border: 2px solid rgb(255, 228, 109);
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            margin: 100px auto;
+            background: rgb(36, 36, 36);
+            border-radius: 5%;
+        }
+
+        .container .box {
+            position: relative;
+            width: calc(400px - 30px);
+            height: calc(300px - 30px);
+            background: rgb(255, 255, 96);
+            float: left;
+            margin: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 13px;
+        }
+
+        .container .box .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(22, 93, 109);
+            transition: 0.5s;
+            z-index: 1;
+        }
+
+        .container .box:hover .icon {
+            top: 5px;
+            left: calc(50% - 40px);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .container .box .icon p {
+            color: #fff;
+            font-size: 30px;
+            margin-top: 27%;
+            font-weight: bold;
+        }
+
+        .container .box:hover .icon p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .container .box:hover .icon .fa {
+            font-size: 40px;
+        }
+
+        .container .box .content {
+            position: absolute;
+            top: 100%;
+            height: calc(100% - 100px);
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+        .container .box:hover .content {
+            top: 100px;
+            opacity: 1;
+
+        }
+
+        .container .box .content p {
+            margin: 0 0 10px;
+            padding: 0;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .container .box .content p {
+            margin: 0;
+            padding: 0;
+            color: rgb(0, 0, 0);
+        }
+
+        @media only screen and (max-width : 768px) {
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-color: rgb(255, 91, 15);
+            }
+
+            .first {
+                display: flex;
+                justify-content: center;
+            }
+
+            span {
+                align-items: center;
+                background-color: rgb(34, 84, 101);
+                text-align: center;
+                color: rgb(39, 90, 96);
+                font-size: 60px;
+                border: 2px solid rgb(255, 228, 109);
+            }
+
+            .container {
+                position: relative;
+                width: 400px;
+                height: 300px;
+                margin: 100px;
+                background: rgb(36, 36, 36);
+            }
+
+            .container .box {
+                position: relative;
+                width: calc(400px - 30px);
+                height: calc(300px - 30px);
+                background: rgb(31, 62, 94);
+                float: left;
+                margin: 15px;
+                box-sizing: border-box;
+                overflow: hidden;
+                border-radius: 13px;
+            }
+
+            .container .box .icon {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(30, 79, 76);
+                transition: 0.5s;
+                z-index: 1;
+            }
+
+            .container .box:hover .icon {
+                top: 5px;
+                left: calc(50% - 40px);
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+            .container .box .icon p {
+                color: #fff;
+                font-size: 30px;
+                margin-top: 27%;
+                font-weight: bold;
+            }
+
+            .container .box:hover .icon p {
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .container .box:hover .icon .fa {
+                font-size: 40px;
+            }
+
+            .container .box .content {
+                position: absolute;
+                top: 100%;
+                height: calc(100% - 100px);
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+
+            .container .box:hover .content {
+                top: 100px;
+                opacity: 1;
+
+            }
+
+            .container .box .content p {
+                margin: 0 0 10px;
+                padding: 0;
+                color: #fff;
+                font-size: 18px;
+            }
+
+            .container .box .content p {
+                margin: 0;
+                padding: 0;
+                color: rgb(0, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <h1>Robotics Event</h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="icon">
+                <p align="center">Line follower</p>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa facere, perspiciatis aperiam nobis
+                    eum minus atque ullam, maiores qui ducimus labore quaerat molestiae provident harum dolorem
+                    assumenda accusamus consequatur exercitationem.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="icon">
+                <p align="center">Pick & Place</p>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, minus. Quis cupiditate non dolor
+                    fuga, repellendus maiores voluptas ex culpa cum eius quas nisi, numquam vitae voluptatum aspernatur
+                    similique iste.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="icon">
+                <p align="center">Robo Race</p>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime numquam molestias veritatis
+                    fugiat tempora repudiandae, nam aperiam nobis impedit recusandae pariatur quaerat eum cum,
+                    voluptatibus eaque commodi eos reiciendis!</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="icon">
+                <p align="center">Electronic Junk Yard</p>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus modi, quos voluptatum nam iusto
+                    sunt provident fugiat, beatae nostrum animi cum! Reprehenderit ipsa eveniet dolorem modi nemo vero
+                    at eum.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
